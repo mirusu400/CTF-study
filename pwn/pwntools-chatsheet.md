@@ -27,6 +27,7 @@ print(p.recvline())
 ```
 
 * `SSH` 연결
+> 참고로 위의 `remote`로도 접속이 가능합니다.
 ```python
 p = ssh("username", "localhost", port=22, password="test")
 p2 = p.run("/bin/sh")

@@ -69,7 +69,17 @@ john ./mypasswd
 
 ## 사용법 (심화)
 
+### zip 파일 패스워드 크래킹
 
+1. zip 파일을 john 이 읽을수 있는 파일로 변환한다
+```
+zip2john test.zip > hash.txt
+```
+
+2. john 으로 크랙한다
+```
+john ./hash.txt
+```
 
 ## 기타
 
